@@ -1,0 +1,82 @@
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: black;
+  text-align: start;
+  flex-wrap: wrap; /* For responsiveness */
+}
+
+.feature-cards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 50px; /* Balanced spacing */
+  width: 100%;
+  max-width: 1200px;
+}
+
+.feature-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 1; /* Allow equal distribution of space */
+}
+
+.card {
+  background-color: #121212;
+  color: white;
+  border: 1px solid #333;
+  padding: 30px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  flex: 1; /* Allow flexibility for equal sizing */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(255, 69, 0, 0.6);
+}
+
+.card h2 {
+  color: orangered;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d3d3d3;
+}
+
+/* Mockup Image */
+.mockup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* Equal space as cards */
+  max-width: 300px; /* Adjust image size */
+}
+
+.mockup-container img {
+  width: 150%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .feature-cards-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .mockup-container {
+    margin: 20px 0;
+  }
+}
